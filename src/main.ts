@@ -7,7 +7,7 @@ async function bootstrap() {
   // using pipes globally for all requests
   app.useGlobalPipes(
     new ValidationPipe({
-      whitelist: true, // to eliminates all the unnecessary params from requests
+      whitelist: true, // to eliminate all the unnecessary params from requests
     }),
   );
   await app.listen(3333);
