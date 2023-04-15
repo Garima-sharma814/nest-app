@@ -11,6 +11,7 @@
     "db:dev:up": "docker compose up dev-db -d",
     "db:dev:rs": "yarn db:dev:rm && yarn db:dev:up && sleep 1 && yarn prisma:dev:deploy",
     "prisma:test:deploy": "dotenv -e .env.test -- prisma migrate deploy",
+    "prisma:test:studio": "dotenv -e .env.test -- prisma studio",
     "db:test:rm": "docker compose rm test-db -s -f -v",
     "db:test:up": "docker compose up test-db -d",
     "db:test:rs": "yarn db:test:rm && yarn db:test:up && sleep 1 && yarn prisma:test:deploy",
